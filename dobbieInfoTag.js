@@ -1,7 +1,16 @@
 (function () {
     window._uxa = window._uxa || [];
-    try {
+    
+    //Set PII selectors
+    var dataSelectors =  {
+      PIISelectors: [".footer, #serviceAddressCardEdit"]
+     };
 
+     window._uxa.push(['setPIISelectors',  dataSelectors ]);
+
+    //Set Datalayer
+    try {
+        
     } catch (e){}
     if (typeof CS_CONF === 'undefined') {
       window._uxa.push(['setPath', window.location.pathname+window.location.hash.replace('#','?__')]);
