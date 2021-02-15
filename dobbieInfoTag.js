@@ -12,11 +12,15 @@
       ]
      };
 
+     //document.querySelectorAll(dataSelectors.PIISelectors).forEach((el) => el.textContent = el.textContent.replace(/./g,'-'));
+
      window._uxa.push(['setPIISelectors',  dataSelectors ]);
 
     //Set Datalayer
     try {
-        
+      if (pageType != null){
+        window._uxa.push(['setCustomVariable', 1, 'pageName', pageType, 3]);
+      }
     } catch (e){}
     if (typeof CS_CONF === 'undefined') {
       window._uxa.push(['setPath', window.location.pathname+window.location.hash.replace('#','?__')]);
