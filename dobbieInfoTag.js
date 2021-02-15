@@ -3,7 +3,13 @@
     
     //Set PII selectors
     var dataSelectors =  {
-      PIISelectors: [".footer, #serviceAddressCardEdit"]
+      PIISelectors: [".footer, #snowTitle"],
+      Attributes: [
+        {
+          selector: ".col-md-7", // CSS selectors
+          attrName: ["testAtt","testAtt3"] // Attribute name you want to mask
+      }
+      ]
      };
 
      window._uxa.push(['setPIISelectors',  dataSelectors ]);
