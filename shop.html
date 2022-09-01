@@ -1,309 +1,499 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-KV2LZ3F');</script>
-	<!-- End Google Tag Manager -->
-	<title>Dobbie Sandbox Site</title>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<script
-		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<script src="js/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".dropdown img.flag").addClass("flagvisibility");
-
-			$(".dropdown dt a").click(function () {
-				$(".dropdown dd ul").toggle();
-			});
-
-			$(".dropdown dd ul li a").click(function () {
-				var text = $(this).html();
-				$(".dropdown dt a span").html(text);
-				$(".dropdown dd ul").hide();
-				$("#result").html("Selected value is: " + getSelectedValue("sample"));
-			});
-
-			function getSelectedValue(id) {
-				return $("#" + id).find("dt a span.value").html();
-			}
-
-			$(document).bind('click', function (e) {
-				var $clicked = $(e.target);
-				if (!$clicked.parents().hasClass("dropdown"))
-					$(".dropdown dd ul").hide();
-			});
-
-
-			$("#flagSwitcher").click(function () {
-				$(".dropdown img.flag").toggleClass("flagvisibility");
-			});
-		});
-	</script>
-</head>
-<!--Load Nav-->
-<div id="nav-placeholder">
-</div>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-	$.get("navbar.html", function (data) {
-		$("#nav-placeholder").replaceWith(data);
-	});
-</script>
-<!--End Nav-->
-
-<body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV2LZ3F" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<div class="header">
-
-	</div>
-	<div class="main">
-		<div class="shop_top">
-			<div class="container">
-				<div class="row shop_box-top">
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic5.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<span class="sale-box">
-								<span class="sale-label">Sale!</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="reducedfrom">$66.00</span>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic6.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic7.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<span class="sale-box">
-								<span class="sale-label">Sale!</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="reducedfrom">$66.00</span>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic8.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="reducedfrom">$66.00</span>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic9.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic10.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<span class="sale-box">
-								<span class="sale-label">Sale!</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic11.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="reducedfrom">$66.00</span>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-					<div class="col-md-3 shop_box"><a href="single.html">
-							<img src="images/pic12.jpg" class="img-responsive" alt="" />
-							<span class="new-box">
-								<span class="new-label">New</span>
-							</span>
-							<span class="sale-box">
-								<span class="sale-label">Sale!</span>
-							</span>
-							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
-								<p>Lorem ipsum consectetuer adipiscing </p>
-								<span class="reducedfrom">$66.00</span>
-								<span class="actual">$12.00</span><br>
-								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
-									<li class="shop_btn"><a href="#">Read More</a></li>
-									<div class="clear"> </div>
-								</ul>
-							</div>
-						</a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>Products</h4>
-						<li><a href="#">Mens</a></li>
-						<li><a href="#">Womens</a></li>
-						<li><a href="#">Youth</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>About</h4>
-						<li><a href="#">Careers and internships</a></li>
-						<li><a href="#">Sponserships</a></li>
-						<li><a href="#">team</a></li>
-						<li><a href="#">Catalog Request/Download</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>Customer Support</h4>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Shipping and Order Tracking</a></li>
-						<li><a href="#">Easy Returns</a></li>
-						<li><a href="#">Warranty</a></li>
-						<li><a href="#">Replacement Binding Parts</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>Newsletter</h4>
-						<div class="footer_search">
-							<form>
-								<input type="text" value="Enter your email" onfocus="this.value = '';"
-									onblur="if (this.value == '') {this.value = 'Enter your email';}">
-								<input type="submit" value="Go">
-							</form>
-						</div>
-						<ul class="social">
-							<li class="facebook"><a href="#"><span> </span></a></li>
-							<li class="twitter"><a href="#"><span> </span></a></li>
-							<li class="instagram"><a href="#"><span> </span></a></li>
-							<li class="pinterest"><a href="#"><span> </span></a></li>
-							<li class="youtube"><a href="#"><span> </span></a></li>
-						</ul>
-
-					</ul>
-				</div>
-			</div>
-			<div class="row footer_bottom">
-				<div class="copy">
-					<p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-				</div>
-				<dl id="sample" class="dropdown">
-					<dt><a href="#"><span>Change Region</span></a></dt>
-					<dd>
-						<ul>
-							<li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span
-										class="value">AS</span></a></li>
-							<li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span
-										class="value">SL</span></a></li>
-							<li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span
-										class="value">NZ</span></a></li>
-							<li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span
-										class="value">Pk</span></a></li>
-							<li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span
-										class="value">UK</span></a></li>
-							<li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span
-										class="value">US</span></a></li>
-						</ul>
-					</dd>
-				</dl>
-			</div>
-		</div>
-	</div>
-</body>
-
+  <head>
+    <title>Shopio | Bootstrap 5 E-commerce Template by Bootstrapious.com</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&amp;display=swap">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.css">
+    <!-- Choices.js-->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.css">
+    <!-- Nouislider-->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light py-2 py-lg-4 bg-white shadow-sm">
+      <div class="container">
+        <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="Patrol online store" width="100"></a>
+        <!-- Navbar toggler-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- Navbar collapse-->
+        <div class="collapse navbar-collapse d-lg-flex align-items-lg-center justify-content-lg-between" id="navbarSupportedContent">
+          <!-- Navbar menu right-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-lg-3"><a class="nav-link text-uppercase active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item dropdown me-lg-3"><a class="nav-link text-uppercase dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu mt-3" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html">Homepage</a></li>
+                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                <li><a class="dropdown-item" href="detail.html">Item details</a></li>
+                <li><a class="dropdown-item" href="cart.html">Shopping cart</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-lg-3"><a class="nav-link text-uppercase" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="detail.html">Detail</a></li>
+          </ul>
+          <!-- Navbar menu left-->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row">
+            <li class="nav-item me-3"><a class="nav-link text-uppercase position-relative" href="cart.html">
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy">
+                  <use xlink:href="#retail-bag-1"> </use>
+                </svg><span class="badge rounded-pill bg-primary">2</span></a></li>
+            <li class="nav-item me-3"><a class="nav-link text-uppercase position-relative" href="#"><i class="far fa-heart"></i><span class="badge rounded-pill bg-primary">0</span></a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="login.html">
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy">
+                  <use xlink:href="#user-1"> </use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--  Modal -->
+    <div class="modal fade" id="productView" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content rounded-0 border-0">
+          <div class="modal-body p-0 overflow-hidden shadow">
+            <div class="row align-items-stretch">
+              <div class="col-lg-6 p-lg-0 modal-product-img"><a class="glightbox product-view d-block h-100 bg-cover bg-center" style="background: url(img/product-5.jpg)" href="img/product-5.jpg" data-gallery="productview"></a><a class="glightbox product-view h-100 bg-cover bg-center d-none" href="img/product-5-alt-1.jpg" data-gallery="productview"></a><a class="glightbox product-view h-100 bg-cover bg-center d-none" href="img/product-5-alt-2.jpg" data-gallery="productview"></a></div>
+              <div class="col-lg-6">
+                <button class="close modal-close p-4 border-0" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+                    <svg class="svg-icon text-white mt-1">
+                      <use xlink:href="#close-1"> </use>
+                    </svg></span></button>
+                <div class="p-5 my-md-4">
+                  <ul class="list-inline mb-2">
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                  </ul>
+                  <h2 class="h5 text-uppercase">Kui Ye Chen’s AirPods</h2>
+                  <p class="text-muted">$250</p>
+                  <p class="text-small mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
+                  <ul class="list-inline mb-4">
+                    <li class="list-inline-item me-3"><strong>Quantity</strong></li>
+                    <li class="list-inline-item">
+                      <div class="border d-flex align-items-center justify-content-between p-1">
+                        <div class="quantity py-0">
+                          <button class="dec-btn p-0" onclick="decrease(this)"><i class="fas fa-caret-left"></i></button>
+                          <input class="form-control border-0 shadow-0 p-0 quantity-result" type="text" value="1">
+                          <button class="inc-btn p-0" onclick="increase(this)"><i class="fas fa-caret-right"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-inline-item"><a class="btn btn-dark" href="cart.html"> 
+                        <svg class="svg-icon text-white me-2 svg-icon-md me-2 pe-1">
+                          <use xlink:href="#shopping-bag-1"> </use>
+                        </svg>Add to cart</a></li>
+                  </ul><a class="p-0 reset-anchor" href="#"><i class="far fa-heart me-2"></i>Add to wish list</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero section-->
+    <section class="sub-hero bg-center bg-cover d-flex align-items-center" style="background: url(img/bg-banner.jpg)">
+      <div class="container">
+        <h1 class="mb-1 hero-heading">Shop</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 px-0">
+            <li class="breadcrumb-item"><a class="reset-anchor" href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <!-- Shop sidebar-->
+          <div class="col-xl-2 col-lg-3 order-2 order-lg-1">
+            <h5 class="mb-4">Shop by Category</h5>
+            <ul class="list-unstyled text-muted mb-5">
+              <li class="mb-2 d-flex align-items-center justify-content-between"><a class="reset-anchor" href="#">Clothes</a><span class="badge bg-light text-dark">240</span></li>
+              <li class="mb-2 d-flex align-items-center justify-content-between"><a class="reset-anchor" href="#">Electronics</a><span class="badge bg-light text-dark">120</span></li>
+              <li class="mb-2 d-flex align-items-center justify-content-between"><a class="reset-anchor" href="#">Health &amp; Beauty</a><span class="badge bg-light text-dark">70</span></li>
+              <li class="mb-2 d-flex align-items-center justify-content-between"><a class="reset-anchor" href="#">Shoes</a><span class="badge bg-light text-dark">324</span></li>
+              <li class="mb-2 d-flex align-items-center justify-content-between"><a class="reset-anchor" href="#">Watches</a><span class="badge bg-light text-dark">180</span></li>
+              <li class="mb-2 d-flex align-items-center justify-content-between"><a class="reset-anchor" href="#">Accessories</a><span class="badge bg-light text-dark">77</span></li>
+            </ul>
+            <h5 class="mb-4">Price range</h5>
+            <div class="price-range pt-4 mb-5">
+              <div id="priceRange"></div>
+              <div class="row pt-2">
+                <div class="col-6"><strong class="small font-weight-bold">From</strong></div>
+                <div class="col-6 text-end"><strong class="small font-weight-bold">To</strong></div>
+              </div>
+            </div>
+            <h5 class="mb-3">Show by brand</h5>
+            <div class="mb-2 form-check">
+              <input class="form-check-input" id="exampleCheck1" type="checkbox" checked>
+              <label class="form-check-label" for="exampleCheck1">Zara</label>
+            </div>
+            <div class="mb-2 form-check">
+              <input class="form-check-input" id="exampleCheck2" type="checkbox" checked>
+              <label class="form-check-label" for="exampleCheck2">Cucci</label>
+            </div>
+            <div class="mb-2 form-check">
+              <input class="form-check-input" id="exampleCheck3" type="checkbox" checked>
+              <label class="form-check-label" for="exampleCheck3">Rayban</label>
+            </div>
+            <div class="mb-2 form-check">
+              <input class="form-check-input" id="exampleCheck4" type="checkbox" checked>
+              <label class="form-check-label" for="exampleCheck4">Defactu</label>
+            </div>
+            <div class="mb-2 form-check">
+              <input class="form-check-input" id="exampleCheck5" type="checkbox">
+              <label class="form-check-label" for="exampleCheck5">River Nine</label>
+            </div>
+            <div class="mb-2 form-check">
+              <input class="form-check-input" id="exampleCheck6" type="checkbox">
+              <label class="form-check-label" for="exampleCheck6">Puma</label>
+            </div>
+            <div class="mb-2 form-check">
+              <input class="form-check-input" id="exampleCheck7" type="checkbox">
+              <label class="form-check-label" for="exampleCheck7">Nike</label>
+            </div>
+            <div class="mb-5 form-check">
+              <input class="form-check-input" id="exampleCheck8" type="checkbox">
+              <label class="form-check-label" for="exampleCheck8">Ravin</label>
+            </div>
+            <h5 class="mb-3">Shop by color</h5>
+            <form action="#">
+              <div class="form-check">
+                <input class="form-check-input" id="seaColor" type="checkbox">
+                <label class="form-check-label d-flex align-items-center" for="seaColor"><i class="fas fa-circle text-primary me-2 text-xs"></i><span>Sea</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="yellowColor" type="checkbox">
+                <label class="form-check-label d-flex align-items-center" for="yellowColor"><i class="fas fa-circle text-warning me-2 text-xs"></i><span>Yellow</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="greenColor" type="checkbox">
+                <label class="form-check-label d-flex align-items-center" for="greenColor"><i class="fas fa-circle text-success me-2 text-xs"></i><span>Green</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="cyanColor" type="checkbox">
+                <label class="form-check-label d-flex align-items-center" for="cyanColor"><i class="fas fa-circle text-info me-2 text-xs"></i><span>Cyan</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="redColor" type="checkbox">
+                <label class="form-check-label d-flex align-items-center" for="redColor"><i class="fas fa-circle text-danger me-2 text-xs"></i><span>Red</span></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="blackColor" type="checkbox">
+                <label class="form-check-label d-flex align-items-center" for="blackColor"><i class="fas fa-circle text-dark me-2 text-xs"></i><span>Black</span></label>
+              </div>
+            </form>
+          </div>
+          <!-- Shop listing-->
+          <div class="col-xl-10 col-lg-9 order-1 order-lg-2 mb-5 mb-lg-0">
+            <!-- Listing filter-->
+            <div class="row mb-4 pb-3 align-items-center">
+              <div class="col-md-6 text-center text-md-start">
+                <p class="small text-muted">Showing <strong class="text-dark">12 </strong>of <strong class="text-dark">265 </strong>items</p>
+              </div>
+              <div class="col-md-6 text-lg-end">
+                <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a class="btn btn-outline-dark px-2 btn-sm border-light" href="#"><i class="fas fa-th-list"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-dark px-2 btn-sm border-light" href="#"><i class="fas fa-th"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-dark px-2 btn-sm border-light" href="#"><i class="fas fa-th-large"></i></a></li>
+                  </ul>
+                  <ul class="list-inline mb-0 ms-2">
+                    <li class="list-inline-item text-start">
+                      <select class="form-control js-sort" name="sort">
+                        <option value="">Sort by</option>
+                        <option value="Option 1">Price: low to high</option>
+                        <option value="Option 1">Price: high to low</option>
+                        <option value="Option 1">Best match</option>
+                        <option value="Option 1">Top rated</option>
+                        <option value="Option 1">Popularity</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-primary">New Arrival</span><a href="detail.html"><img class="img-fluid" src="img/product-1.jpg" alt="Round grey hanging decor"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Round grey hanging decor</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-2.jpg" alt="silver black round Ipod"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">silver black round Ipod</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-info">Trending</span><a href="detail.html"><img class="img-fluid" src="img/product-3.jpg" alt="White USB cable"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">White USB cable</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-4.jpg" alt="Sony PS 4 game controller"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Sony PS 4 game controller</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-5.jpg" alt="Kui Ye Chen’s AirPods"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Kui Ye Chen’s AirPods</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-warning">Hot</span><a href="detail.html"><img class="img-fluid" src="img/product-6.jpg" alt="Black camera lens"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Black camera lens</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-7.jpg" alt="Apple wireless keyboard"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Apple wireless keyboard</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-danger">Soldout</span><a href="detail.html"><img class="img-fluid" src="img/product-8.jpg" alt="Black Canon EOS camera"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Black Canon EOS camera</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-primary">New Arrival</span><a href="detail.html"><img class="img-fluid" src="img/product-9.jpg" alt="Silver round analog watch"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Silver round analog watch</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-10.jpg" alt="Apple Watch"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Apple Watch</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-info">Trending</span><a href="detail.html"><img class="img-fluid" src="img/product-11.jpg" alt="Joemalone Women prefume"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Joemalone Women prefume</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-12.jpg" alt="Nike air max 95"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Nike air max 95</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-danger">Soldout</span><a href="detail.html"><img class="img-fluid" src="img/product-13.jpg" alt="Red digital smartwatch"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Red digital smartwatch</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-14.jpg" alt="Air Jordan 12 gym red"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Air Jordan 12 gym red</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-warning">Hot</span><a href="detail.html"><img class="img-fluid" src="img/product-15.jpg" alt="Kui Ye Chen’s AirPods"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Kui Ye Chen’s AirPods</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Product-->
+              <div class="col-xl-3 col-lg-4 col-6">
+                <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-10.jpg" alt="Apple watch"></a>
+                  <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+                </div>
+                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Apple watch</a></h6>
+                <p class="text-center text-muted font-weight-bold mb-4">$22.00</p>
+              </div>
+              <!-- Pagination-->
+              <nav class="pt-5" aria-label="Page navigation">
+                <ul class="pagination justify-content-center justify-content-lg-end mb-0">
+                  <li class="page-item mx-1"><a class="page-link py-1" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li class="page-item mx-1 active"><a class="page-link py-1" href="#">1</a></li>
+                  <li class="page-item mx-1"><a class="page-link py-1" href="#">2</a></li>
+                  <li class="page-item mx-1"><a class="page-link py-1" href="#">3</a></li>
+                  <li class="page-item mx-1"><a class="page-link py-1" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 mb-3 mb-md-0"><img class="img-fluid mb-3" src="img/logo-white.svg" alt="Patrol" width="120">
+            <p class="text-muted">We are Shopio.</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fab fa-cc-visa text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-mastercard text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-discover text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-paypal text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-amex text-gray"></i></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-12 mb-3 mb-md-0">
+            <h6 class="text-white">Menu</h6>
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-2"> <a class="reset-anchor" href="#">About</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">Blog</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">Contact</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-12 mb-3 mb-md-0">
+            <h6 class="text-white">Checkout</h6>
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-2"> <a class="reset-anchor" href="#">My Account</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Orders Tracking</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Checkout</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Wishlist</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-3 mb-md-0">
+            <p class="lead mb-1 text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+            <p class="text-muted">12 El Dorado, Las Vegas, AZ</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-youtube"></i></a></li>
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="border-top py-4" style="border-color: #1d1d1d !important">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="small text-muted mb-0">© 2020 All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <p class="small text-muted mb-0">Template designed by <a class="text-white reset-anchor" href="https://bootstrapious.com/e-commerce-templates">Bootstrapious</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.js"></script>
+    <script src="vendor/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+      /* ==============================================
+          CUSTOM SELECT
+        ============================================== */
+      const sorting = document.querySelector('.js-sort');
+      const sortingchoices = new Choices(sorting, {
+          placeholder: false,
+          itemSelectText: ''
+      });
+      
+      var slider = document.getElementById('priceRange');
+      noUiSlider.create(slider, {
+          start: [0, 30],
+          connect: true,
+          tooltips: [true, true],
+          range: {
+              'min': 0,
+              'max': 100
+          }
+      });
+      
+      
+    </script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+      
+      
+      
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
 </html>

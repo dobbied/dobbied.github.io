@@ -1,0 +1,25 @@
+------------------------------------------
+ CREDITS
+------------------------------------------
+
+    - Bootstrap 5    -    https://v5.getbootstrap.com
+
+    - Font Awesome   -    https://fontawesome.com
+
+    - Orion Icons    -    https://orioniconlibrary.com/
+
+    - Glightbox      -    https://biati-digital.github.io/glightbox/
+
+    - Nouislider     -    https://refreshless.com/nouislider/
+
+    - Choices.js     -    https://github.com/jshjohnson/Choices
+
+    - Swiper         -    https://swiperjs.com
+
+    - Js Cookie      -    https://github.com/js-cookie/js-cookie
+
+
+------------------------------------------
+ IMAGES
+------------------------------------------
+    - All images credits go to https://unsplash.com

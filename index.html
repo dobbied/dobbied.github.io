@@ -1,326 +1,525 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-	<script>
-		pageType = 'Homepage';
-	</script>
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-KV2LZ3F');</script>
-	<!-- End Google Tag Manager -->
-	<title>Dobbie Sandbox Site</title>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> -->
-	<script
-		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<script src="js/jquery.min.js"></script>
-	<!--<script src="js/jquery.easydropdown.js"></script>-->
-	<!--start slider -->
-	<link rel="stylesheet" href="css/fwslider.css" media="all">
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/fwslider.js"></script>
-	<!--end slider -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".dropdown img.flag").addClass("flagvisibility");
-
-			$(".dropdown dt a").click(function () {
-				$(".dropdown dd ul").toggle();
-			});
-
-			$(".dropdown dd ul li a").click(function () {
-				var text = $(this).html();
-				$(".dropdown dt a span").html(text);
-				$(".dropdown dd ul").hide();
-				$("#result").html("Selected value is: " + getSelectedValue("sample"));
-			});
-
-			function getSelectedValue(id) {
-				return $("#" + id).find("dt a span.value").html();
-			}
-
-			$(document).bind('click', function (e) {
-				var $clicked = $(e.target);
-				if (!$clicked.parents().hasClass("dropdown"))
-					$(".dropdown dd ul").hide();
-			});
-
-
-			$("#flagSwitcher").click(function () {
-				$(".dropdown img.flag").toggleClass("flagvisibility");
-			});
-		});
-	</script>
-	<!--Load Nav-->
-	<div id="nav-placeholder">
-	</div>
-	<script src="//code.jquery.com/jquery.min.js"></script>
-	<script>
-		$.get("navbar.html", function (data) {
-			$("#nav-placeholder").replaceWith(data);
-		});
-	</script>
-	<!--End Nav-->
-</head>
-
-<body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV2LZ3F" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<div class="header">
-
-	</div>
-
-	<div class="banner">
-		<!-- start slider -->
-		<div id="fwslider">
-			<div class="slider_container">
-				<div class="slide">
-					<!-- Slide image -->
-					<img src="images/slider1.jpg" class="img-responsive" alt="" />
-					<!-- /Slide image -->
-					<!-- Texts container -->
-					<div class="slide_content">
-						<div class="slide_content_wrap">
-							<!-- Text title -->
-							<h1 class="title">Run Over<br>Everything</h1>
-							<!-- /Text title -->
-							<div class="button"><a href="shop.html">See Details</a></div>
-						</div>
-					</div>
-					<!-- /Texts container -->
-				</div>
-				<!-- /Duplicate to create more slides -->
-				<div class="slide">
-					<img src="images/slider2.jpg" class="img-responsive" alt="" />
-					<div class="slide_content">
-						<div class="slide_content_wrap">
-							<h1 class="title">Run Over<br>Everything</h1>
-							<div class="button"><a href="shop.html">See Details</a></div>
-						</div>
-					</div>
-				</div>
-				<!--/slide -->
-			</div>
-			<div class="timers"></div>
-			<div class="slidePrev"><span></span></div>
-			<div class="slideNext"><span></span></div>
-		</div>
-		<!--/slider -->
-	</div>
-	<div class="main">
-		<div class="content-top">
-
-			<h2 id="snowTitle">snowboards live</h2>
-			<p>hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
-			<div class="close_but"><i class="close1"> </i></div>
-			<ul id="flexiselDemo3">
-				<li><img src="images/board1.jpg" /></li>
-				<li><img src="images/board2.jpg" /></li>
-				<li><img src="images/board3.jpg" /></li>
-				<li><img src="images/board4.jpg" /></li>
-				<li><img src="images/board5.jpg" /></li>
-			</ul>
-			<h3>SnowBoard Extreme Series</h3>
-			<script type="text/javascript">
-				$(window).load(function () {
-					$("#flexiselDemo3").flexisel({
-						visibleItems: 5,
-						animationSpeed: 1000,
-						autoPlay: true,
-						autoPlaySpeed: 3000,
-						pauseOnHover: true,
-						enableResponsiveBreakpoints: true,
-						responsiveBreakpoints: {
-							portrait: {
-								changePoint: 480,
-								visibleItems: 1
-							},
-							landscape: {
-								changePoint: 640,
-								visibleItems: 2
-							},
-							tablet: {
-								changePoint: 768,
-								visibleItems: 3
-							}
-						}
-					});
-
-				});
-			</script>
-			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-		</div>
-	</div>
-	<div class="content-bottom">
-		<div class="container">
-			<div class="row content_bottom-text">
-				<div class="col-md-7" testAtt="hideThis" testAtt2="don't hide this" testAtt3="hide this">
-					<h3>The Mountains<br>Snowboarding</h3>
-					<p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-						euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-						quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-						consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-						consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.
-					</p>
-					<p class="m_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-						euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-						quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-						consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-						consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="features">
-		<div class="container">
-			<h3 class="m_3">Features</h3>
-			<div class="close_but"><i class="close1"> </i></div>
-			<div class="row">
-				<div class="col-md-3 top_box">
-					<div class="view view-ninth"><a href="single.html">
-							<img src="images/pic1.jpg" class="img-responsive" alt="" />
-							<div class="mask mask-1"> </div>
-							<div class="mask mask-2"> </div>
-							<div class="content">
-								<h2>Hover Style #9</h2>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-							</div>
-						</a> </div </div>
-					<h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
-					<p class="m_5">claritatem insitam</p>
-				</div>
-				<div class="col-md-3 top_box">
-					<div class="view view-ninth"><a href="single.html">
-							<img src="images/pic2.jpg" class="img-responsive" alt="" />
-							<div class="mask mask-1"> </div>
-							<div class="mask mask-2"> </div>
-							<div class="content">
-								<h2>Hover Style #9</h2>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-							</div>
-						</a> </div>
-					<h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
-					<p class="m_5">claritatem insitam</p>
-				</div>
-				<div class="col-md-3 top_box">
-					<div class="view view-ninth"><a href="single.html">
-							<img src="images/pic3.jpg" class="img-responsive" alt="" />
-							<div class="mask mask-1"> </div>
-							<div class="mask mask-2"> </div>
-							<div class="content">
-								<h2>Hover Style #9</h2>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-							</div>
-						</a> </div>
-					<h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
-					<p class="m_5">claritatem insitam</p>
-				</div>
-				<div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-							<img src="images/pic4.jpg" class="img-responsive" alt="" />
-							<div class="mask mask-1"> </div>
-							<div class="mask mask-2"> </div>
-							<div class="content">
-								<h2>Hover Style #9</h2>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-							</div>
-						</a> </div>
-					<h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
-					<p class="m_5">claritatem insitam</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>Products</h4>
-						<li><a href="#">Mens</a></li>
-						<li><a href="#">Womens</a></li>
-						<li><a href="#">Youth</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>About</h4>
-						<li><a href="#">Careers and internships</a></li>
-						<li><a href="#">Sponserships</a></li>
-						<li><a href="#">team</a></li>
-						<li><a href="#">Catalog Request/Download</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>Customer Support</h4>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Shipping and Order Tracking</a></li>
-						<li><a href="#">Easy Returns</a></li>
-						<li><a href="#">Warranty</a></li>
-						<li><a href="#">Replacement Binding Parts</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer_box">
-						<h4>Newsletter</h4>
-						<div class="footer_search">
-							<form>
-								<input type="text" value="Enter your email" onfocus="this.value = '';"
-									onblur="if (this.value == '') {this.value = 'Enter your email';}">
-								<input type="submit" value="Go">
-							</form>
-						</div>
-						<ul class="social">
-							<li class="facebook"><a href="#"><span> </span></a></li>
-							<li class="twitter"><a href="#"><span> </span></a></li>
-							<li class="instagram"><a href="#"><span> </span></a></li>
-							<li class="pinterest"><a href="#"><span> </span></a></li>
-							<li class="youtube"><a href="#"><span> </span></a></li>
-						</ul>
-
-					</ul>
-				</div>
-			</div>
-			<div class="row footer_bottom">
-				<div class="copy">
-					<p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-				</div>
-				<dl id="sample" class="dropdown">
-					<dt><a href="#"><span>Change Region</span></a></dt>
-					<dd>
-						<ul>
-							<li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span
-										class="value">AS</span></a></li>
-							<li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span
-										class="value">SL</span></a></li>
-							<li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span
-										class="value">NZ</span></a></li>
-							<li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span
-										class="value">Pk</span></a></li>
-							<li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span
-										class="value">UK</span></a></li>
-							<li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span
-										class="value">US</span></a></li>
-						</ul>
-					</dd>
-				</dl>
-			</div>
-		</div>
-	</div>
-</body>
-
+  <head>
+    <title>Shopio | Bootstrap 5 E-commerce Template by Bootstrapious.com</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&amp;display=swap">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="vendor/glightbox/css/glightbox.css">
+    <!-- Choices.js-->
+    <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.css">
+    <!-- Nouislider-->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light py-2 py-lg-4 bg-white shadow-sm">
+      <div class="container">
+        <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="Patrol online store" width="100"></a>
+        <!-- Navbar toggler-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- Navbar collapse-->
+        <div class="collapse navbar-collapse d-lg-flex align-items-lg-center justify-content-lg-between" id="navbarSupportedContent">
+          <!-- Navbar menu right-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-lg-3"><a class="nav-link text-uppercase active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item dropdown me-lg-3"><a class="nav-link text-uppercase dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu mt-3" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html">Homepage</a></li>
+                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                <li><a class="dropdown-item" href="detail.html">Item details</a></li>
+                <li><a class="dropdown-item" href="cart.html">Shopping cart</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-lg-3"><a class="nav-link text-uppercase" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="detail.html">Detail</a></li>
+          </ul>
+          <!-- Navbar menu left-->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row">
+            <li class="nav-item me-3"><a class="nav-link text-uppercase position-relative" href="cart.html">
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy">
+                  <use xlink:href="#retail-bag-1"> </use>
+                </svg><span class="badge rounded-pill bg-primary">2</span></a></li>
+            <li class="nav-item me-3"><a class="nav-link text-uppercase position-relative" href="#"><i class="far fa-heart"></i><span class="badge rounded-pill bg-primary">0</span></a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="login.html">
+                <svg class="svg-icon svg-icon-sm svg-icon-heavy">
+                  <use xlink:href="#user-1"> </use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--  Modal -->
+    <div class="modal fade" id="productView" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content rounded-0 border-0">
+          <div class="modal-body p-0 overflow-hidden shadow">
+            <div class="row align-items-stretch">
+              <div class="col-lg-6 p-lg-0 modal-product-img"><a class="glightbox product-view d-block h-100 bg-cover bg-center" style="background: url(img/product-5.jpg)" href="img/product-5.jpg" data-gallery="productview"></a><a class="glightbox product-view h-100 bg-cover bg-center d-none" href="img/product-5-alt-1.jpg" data-gallery="productview"></a><a class="glightbox product-view h-100 bg-cover bg-center d-none" href="img/product-5-alt-2.jpg" data-gallery="productview"></a></div>
+              <div class="col-lg-6">
+                <button class="close modal-close p-4 border-0" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+                    <svg class="svg-icon text-white mt-1">
+                      <use xlink:href="#close-1"> </use>
+                    </svg></span></button>
+                <div class="p-5 my-md-4">
+                  <ul class="list-inline mb-2">
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                    <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
+                  </ul>
+                  <h2 class="h5 text-uppercase">Kui Ye Chen’s AirPods</h2>
+                  <p class="text-muted">$250</p>
+                  <p class="text-small mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
+                  <ul class="list-inline mb-4">
+                    <li class="list-inline-item me-3"><strong>Quantity</strong></li>
+                    <li class="list-inline-item">
+                      <div class="border d-flex align-items-center justify-content-between p-1">
+                        <div class="quantity py-0">
+                          <button class="dec-btn p-0" onclick="decrease(this)"><i class="fas fa-caret-left"></i></button>
+                          <input class="form-control border-0 shadow-0 p-0 quantity-result" type="text" value="1">
+                          <button class="inc-btn p-0" onclick="increase(this)"><i class="fas fa-caret-right"></i></button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-inline-item"><a class="btn btn-dark" href="cart.html"> 
+                        <svg class="svg-icon text-white me-2 svg-icon-md me-2 pe-1">
+                          <use xlink:href="#shopping-bag-1"> </use>
+                        </svg>Add to cart</a></li>
+                  </ul><a class="p-0 reset-anchor" href="#"><i class="far fa-heart me-2"></i>Add to wish list</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero slider-->
+    <section>
+      <div class="swiper-container" id="hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero bg-center bg-cover d-flex align-items-center" style="background: url(img/bg-banner-1.jpg)">
+            <div class="container">
+              <div class="row text-lg-center">
+                <div class="col-lg-8">
+                  <p class="h6 text-uppercase text-muted mb-3">Summer 2020</p>
+                  <h1 class="hero-heading line-height-sm mb-2 title" data-swiper-parallax="-200">Fashion Collections</h1>
+                  <div class="row">
+                    <div class="col-lg-5 mx-auto">
+                      <p class="font-weight-light text-muted mb-4 mt-3 subtitle" data-swiper-parallax="-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                  </div><a class="btn btn-primary text" href="shop.html" data-swiper-parallax="-600"> <i class="fas fa-shopping-bag me-2"></i>Shop now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero bg-center bg-cover d-flex align-items-center" style="background: url(img/bg-banner.jpg)">
+            <div class="container">
+              <div class="row text-lg-center">
+                <div class="col-lg-8">
+                  <p class="h6 text-uppercase text-muted mb-3">Summer 2020</p>
+                  <h1 class="hero-heading line-height-sm mb-2 title" data-swiper-parallax="-200">New Watches</h1>
+                  <div class="row">
+                    <div class="col-lg-5 mx-auto">
+                      <p class="font-weight-light text-muted mb-4 mt-3 subtitle" data-swiper-parallax="-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                  </div><a class="btn btn-primary text" href="shop.html" data-swiper-parallax="-600"> <i class="fas fa-shopping-bag me-2"></i>Shop now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero bg-center bg-cover d-flex align-items-center" style="background: url(img/bg-banner-2.jpg)">
+            <div class="container">
+              <div class="row text-lg-center">
+                <div class="col-lg-8">
+                  <p class="h6 text-uppercase text-muted mb-3">Summer 2020</p>
+                  <h1 class="hero-heading line-height-sm mb-2 title" data-swiper-parallax="-200">Shoes brands</h1>
+                  <div class="row">
+                    <div class="col-lg-5 mx-auto">
+                      <p class="font-weight-light text-muted mb-4 mt-3 subtitle" data-swiper-parallax="-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                  </div><a class="btn btn-primary text" href="shop.html" data-swiper-parallax="-600"> <i class="fas fa-shopping-bag me-2"></i>Shop now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination px-4 py-2 text-end h5 font-weight-light"></div>
+      </div>
+    </section>
+    <!-- New arrivals-->
+    <section class="py-5">
+      <div class="container py-5">
+        <header class="mb-3 text-center">
+          <h2 class="mb-0">New arrivals</h2>
+          <p class="text-muted">Browse the Newest Products</p>
+        </header>
+        <div class="swiper-container pt-5" id="newArrivals">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-primary">New Arrival</span><a href="detail.html"><img class="img-fluid" src="img/product-1.jpg" alt="Round grey hanging decor"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Round grey hanging decor</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-2.jpg" alt="silver black round Ipod"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">silver black round Ipod</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-info">Trending</span><a href="detail.html"><img class="img-fluid" src="img/product-3.jpg" alt="White USB cable"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">White USB cable</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-4.jpg" alt="Sony PS 4 game controller"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Sony PS 4 game controller</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-5.jpg" alt="Kui Ye Chen’s AirPods"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Kui Ye Chen’s AirPods</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-warning">Hot</span><a href="detail.html"><img class="img-fluid" src="img/product-6.jpg" alt="Black camera lens"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Black camera lens</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-7.jpg" alt="Apple wireless keyboard"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Apple wireless keyboard</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-danger">Soldout</span><a href="detail.html"><img class="img-fluid" src="img/product-8.jpg" alt="Black Canon EOS camera"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Black Canon EOS camera</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-primary">New Arrival</span><a href="detail.html"><img class="img-fluid" src="img/product-9.jpg" alt="Silver round analog watch"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Silver round analog watch</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev px-3 py-2">
+            <svg class="svg-icon svg-icon-md">
+              <use xlink:href="#arrow-left-1"> </use>
+            </svg>Prev
+          </div>
+          <div class="swiper-button-next px-3 py-2">
+                       Next
+            <svg class="svg-icon svg-icon-md">
+              <use xlink:href="#arrow-right-1"> </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider section-->
+    <section class="py-5 bg-center bg-cover" style="background: url(img/divider-bg.jpg)">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 ms-auto">
+            <h2 class="hero-heading">New watches collections</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn btn-primary" href="#"> <i class="fas fa-shopping-bag-mr-2"></i>Shop now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured products-->
+    <section class="py-5">
+      <div class="container py-5">
+        <header class="mb-3 text-center">
+          <h2 class="mb-0">Featured products</h2>
+          <p class="text-muted">Browse the Newest Products</p>
+        </header>
+        <div class="swiper-container pt-5" id="featuredProducts">
+          <div class="swiper-wrapper">
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-danger">Soldout</span><a href="detail.html"><img class="img-fluid" src="img/product-8.jpg" alt="Black Canon EOS camera"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Black Canon EOS camera</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-primary">New Arrival</span><a href="detail.html"><img class="img-fluid" src="img/product-9.jpg" alt="Silver round analog watch"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Silver round analog watch</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-10.jpg" alt="Apple Watch"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Apple Watch</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-info">Trending</span><a href="detail.html"><img class="img-fluid" src="img/product-11.jpg" alt="Joemalone Women prefume"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Joemalone Women prefume</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-12.jpg" alt="Nike air max 95"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Nike air max 95</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-danger">Soldout</span><a href="detail.html"><img class="img-fluid" src="img/product-13.jpg" alt="Red digital smartwatch"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Red digital smartwatch</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-14.jpg" alt="Air Jordan 12 gym red"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Air Jordan 12 gym red</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-warning">Hot</span><a href="detail.html"><img class="img-fluid" src="img/product-15.jpg" alt="Kui Ye Chen’s AirPods"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Kui Ye Chen’s AirPods</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+            <!-- Product-->
+            <div class="swiper-slide pb-5">
+              <div class="product mb-4"><span class="badge rounded-0 bg-"></span><a href="detail.html"><img class="img-fluid" src="img/product-10.jpg" alt="Apple watch"></a>
+                <div class="cta shadow d-inline-block"><a class="product-btn" href="#"><i class="fas fa-heart"></i></a><a class="product-btn" href="#productView" data-bs-toggle="modal"><i class="fas fa-expand"></i></a><a class="product-btn" href="cart.html"><i class="fas fa-dolly-flatbed"></i></a></div>
+              </div>
+              <h6 class="text-center"><a class="reset-anchor" href="detail.html">Apple watch</a></h6>
+              <p class="text-center text-muted font-weight-bold">$22.00</p>
+            </div>
+          </div>
+          <div class="swiper-button-prev px-3 py-2">
+            <svg class="svg-icon svg-icon-md">
+              <use xlink:href="#arrow-left-1"> </use>
+            </svg>Prev
+          </div>
+          <div class="swiper-button-next px-3 py-2">
+                       Next
+            <svg class="svg-icon svg-icon-md">
+              <use xlink:href="#arrow-right-1"> </use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter section-->
+    <section class="pb-5">
+      <div class="container p-5 bg-light">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">           
+            <h3>Get <span class="text-primary">50% </span>off discount</h3>
+            <p class="text-small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="#">
+              <div class="input-group">
+                <input class="form-control rounded-0" type="text" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="button-addon2">
+                <button class="btn btn-primary" id="button-addon2" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features-->
+    <section>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center p-4 w-100">
+              <svg class="svg-icon text-primary">
+                <use xlink:href="#delivery-time-1"> </use>
+              </svg>
+              <div class="ms-3">
+                <h6 class="mb-1 text-uppercase">Free shipping </h6>
+                <p class="small text-muted mb-0">For all orders over $99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center p-4 w-100">
+              <svg class="svg-icon text-primary">
+                <use xlink:href="#pay-1"> </use>
+              </svg>
+              <div class="ms-3">
+                <h6 class="mb-1 text-uppercase">30 days return </h6>
+                <p class="small text-muted mb-0">If goods have problems</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center p-4 w-100">
+              <svg class="svg-icon text-primary">
+                <use xlink:href="#credit-card-1"> </use>
+              </svg>
+              <div class="ms-3">
+                <h6 class="mb-1 text-uppercase">Secure payment </h6>
+                <p class="small text-muted mb-0">100% secure payment</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center p-4 w-100">
+              <svg class="svg-icon text-primary">
+                <use xlink:href="#helpline-24h-1"> </use>
+              </svg>
+              <div class="ms-3">
+                <h6 class="mb-1 text-uppercase">24/7 support </h6>
+                <p class="small text-muted mb-0">Dedicated support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 mb-3 mb-md-0"><img class="img-fluid mb-3" src="img/logo-white.svg" alt="Patrol" width="120">
+            <p class="text-muted">We are Shopio.</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><i class="fab fa-cc-visa text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-mastercard text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-discover text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-paypal text-gray"></i></li>
+              <li class="list-inline-item"><i class="fab fa-cc-amex text-gray"></i></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-12 mb-3 mb-md-0">
+            <h6 class="text-white">Menu</h6>
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-2"> <a class="reset-anchor" href="#">About</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">Blog</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">Contact</a></li>
+              <li class="mb-2"><a class="reset-anchor" href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-12 mb-3 mb-md-0">
+            <h6 class="text-white">Checkout</h6>
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-2"> <a class="reset-anchor" href="#">My Account</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Orders Tracking</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Checkout</a></li>
+              <li class="mb-2"> <a class="reset-anchor" href="#">Wishlist</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-3 mb-md-0">
+            <p class="lead mb-1 text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+            <p class="text-muted">12 El Dorado, Las Vegas, AZ</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-youtube"></i></a></li>
+              <li class="list-inline-item"><a class="social-icon" href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="border-top py-4" style="border-color: #1d1d1d !important">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="small text-muted mb-0">© 2020 All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <p class="small text-muted mb-0">Template designed by <a class="text-white reset-anchor" href="https://bootstrapious.com/e-commerce-templates">Bootstrapious</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.js"></script>
+    <script src="vendor/choices.js/public/assets/scripts/choices.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+      
+      
+      
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
 </html>
