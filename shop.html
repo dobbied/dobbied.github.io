@@ -50,11 +50,11 @@
   <!-- NAVBAR-->
   <div id="nav-placeholder">
   </div>
-  
+
   <script>
-  $(function(){
-    $("#nav-placeholder").load("navbar.html");
-  });
+    $.get("/components/navbar.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
   </script>
   <!--  Modal -->
   <div class="modal fade" id="productView" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
