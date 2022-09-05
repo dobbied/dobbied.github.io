@@ -46,103 +46,21 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-light py-2 py-lg-4">
-    <div class="container">
-      <!-- Navbar brand--><a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="Patrol online store"
-          width="100"></a>
-      <!-- Navbar toggler-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-          class="navbar-toggler-icon"></span></button>
-      <!-- Navbar collapse-->
-      <div class="collapse navbar-collapse d-lg-flex align-items-lg-center justify-content-lg-between"
-        id="navbarSupportedContent">
-        <!-- Navbar menu right-->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item me-lg-3"><a class="nav-link text-uppercase active" aria-current="page"
-              href="index.html">Home</a></li>
-          <li class="nav-item dropdown me-lg-3"><a class="nav-link text-uppercase dropdown-toggle" id="navbarDropdown"
-              href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-            <ul class="dropdown-menu mt-3" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="index.html">Homepage</a></li>
-              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
-              <li><a class="dropdown-item" href="detail.html">Item details</a></li>
-              <li><a class="dropdown-item" href="cart.html">Shopping cart</a></li>
-            </ul>
-          </li>
-          <li class="nav-item me-lg-3"><a class="nav-link text-uppercase" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="detail.html">Detail</a></li>
-        </ul>
-        <!-- Navbar menu left-->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row">
-          <li class="nav-item me-3"><a class="nav-link text-uppercase position-relative" href="cart.html">
-              <svg class="svg-icon svg-icon-sm svg-icon-heavy">
-                <use xlink:href="#retail-bag-1"> </use>
-              </svg><span class="badge rounded-pill bg-primary">2</span></a></li>
-          <li class="nav-item me-3"><a class="nav-link text-uppercase position-relative" href="#"><i
-                class="far fa-heart"></i><span class="badge rounded-pill bg-primary">0</span></a></li>
-          <li class="nav-item"><a class="nav-link text-uppercase" href="login.html">
-              <svg class="svg-icon svg-icon-sm svg-icon-heavy">
-                <use xlink:href="#user-1"> </use>
-              </svg></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--  Modal -->
-  <div class="modal fade" id="productView" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content rounded-0 border-0">
-        <div class="modal-body p-0 overflow-hidden shadow">
-          <div class="row align-items-stretch">
-            <div class="col-lg-6 p-lg-0 modal-product-img"><a
-                class="glightbox product-view d-block h-100 bg-cover bg-center"
-                style="background: url(img/product-5.jpg)" href="img/product-5.jpg" data-gallery="productview"></a><a
-                class="glightbox product-view h-100 bg-cover bg-center d-none" href="img/product-5-alt-1.jpg"
-                data-gallery="productview"></a><a class="glightbox product-view h-100 bg-cover bg-center d-none"
-                href="img/product-5-alt-2.jpg" data-gallery="productview"></a></div>
-            <div class="col-lg-6">
-              <button class="close modal-close p-4 border-0" type="button" data-bs-dismiss="modal"
-                aria-label="Close"><span aria-hidden="true">
-                  <svg class="svg-icon text-white mt-1">
-                    <use xlink:href="#close-1"> </use>
-                  </svg></span></button>
-              <div class="p-5 my-md-4">
-                <ul class="list-inline mb-2">
-                  <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
-                  <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
-                  <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
-                  <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
-                  <li class="list-inline-item m-0"><i class="fas fa-star small text-warning"></i></li>
-                </ul>
-                <h2 class="h5 text-uppercase">Kui Ye Chen’s AirPods</h2>
-                <p class="text-muted">$250</p>
-                <p class="text-small mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper
-                  leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur
-                  ridiculus mus. Vestibulum ultricies aliquam convallis.</p>
-                <ul class="list-inline mb-4">
-                  <li class="list-inline-item me-3"><strong>Quantity</strong></li>
-                  <li class="list-inline-item">
-                    <div class="border d-flex align-items-center justify-content-between p-1">
-                      <div class="quantity py-0">
-                        <button class="dec-btn p-0" onclick="decrease(this)"><i class="fas fa-caret-left"></i></button>
-                        <input class="form-control border-0 shadow-0 p-0 quantity-result" type="text" value="1">
-                        <button class="inc-btn p-0" onclick="increase(this)"><i class="fas fa-caret-right"></i></button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-inline-item"><a class="btn btn-dark" href="cart.html">
-                      <svg class="svg-icon text-white me-2 svg-icon-md me-2 pe-1">
-                        <use xlink:href="#shopping-bag-1"> </use>
-                      </svg>Add to cart</a></li>
-                </ul><a class="p-0 reset-anchor" href="#"><i class="far fa-heart me-2"></i>Add to wish list</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="nav-placeholder">
   </div>
+  <script>
+    $.get("/components/navbar.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
+  <!--  Modal -->
+  <div id="pdp-modal-placeholder">
+  </div>
+  <script>
+    $.get("/components/pdpModal.html", function (data) {
+      $("#pdp-modal-placeholder").replaceWith(data);
+    });
+  </script>
   <div class="bg-light py-2">
     <div class="container">
       <nav aria-label="breadcrumb">
