@@ -54,7 +54,13 @@
     $.get("/components/navbar.html", function (data) {
       $("#nav-placeholder").replaceWith(data);
     });
+    var event = "Amplitude Test Button Clicked";
+  var eventProperties = {
+    
+  };
+  amplitude.getInstance().logEvent(event, eventProperties);
   </script>
+  
   <!--  Modal -->
   <div id="pdp-modal-placeholder">
   </div>
